@@ -63,7 +63,9 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
+          <button class="hero-btn" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
       <section class="about">
@@ -439,15 +441,54 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subsribe">
+          <h3 class="footer-subscribe-title">Підпишіться на розсилку</h3>
+          <form action="" class="footer-subcribe-form">
+            <label>
+              <input
+                type="text"
+                class="footer-input"
+                name="subscribe-email"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-subscribe-button" type="submit">
+              Підписатися
+              <svg class="backdrop-icon-close" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="backdrop-close" type="button" data-modal-close>
           <svg class="backdrop-icon-close" width="10" height="10">
-            <use href="./images/icons.svg#icon-close" ></use>
+            <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-top-text">Залиште свої дані, ми вам передзвонимо</p>
+          <form action="" class="modal-form">
+            <label for="name">
+              Ім'я
+              <input class="modal-input" type="text" name="user-name" id="name" />
+            </label>
+            <label for="">
+              Телефон
+              <input class="modal-input" type="text" name="user-tel"/>
+            </label>
+            <label for="">
+              Пошта
+              <input class="modal-input" type="text" name="user-email"/>
+            </label>
+            <label for="">
+              Коментар
+              <input class="modal-input" type="text" name="user-comment" placeholder="Введіть текст"/>
+            </label>
+            <button class="modal-button" type="submit">Відправити</button>
+          </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
